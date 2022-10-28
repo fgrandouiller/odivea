@@ -1,1 +1,1 @@
-"""France Tout sur mon eau Water integration."""
+"""France Odivea Water integration."""
