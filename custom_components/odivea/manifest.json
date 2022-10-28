@@ -1,0 +1,9 @@
+{
+  "domain": "odivea",
+  "name": "Odivéa",
+  "documentation": "https://github.com/fgrandouiller/odivea/tree/main/custom_components/odivea",
+  "codeowners": ["fgr"],
+  "version": "1.0",
+  "requirements": [],
+  "iot_class": "cloud_polling"
+}

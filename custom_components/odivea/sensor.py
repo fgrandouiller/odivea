@@ -1,9 +1,9 @@
-"""Sensor for Tout sur mon eau Water Consumption data."""
+"""Sensor for Odivea Water Consumption data."""
 from datetime import timedelta
 import logging
 
-from custom_components.toutsurmoneau.pysuez import SuezClient
-from custom_components.toutsurmoneau.pysuez import PySuezError
+from custom_components.odivea.pysuez import SuezClient
+from custom_components.odivea.pysuez import PySuezError
 import voluptuous as vol
 
 from homeassistant.components.sensor import PLATFORM_SCHEMA, SensorEntity
@@ -16,7 +16,7 @@ CONF_COUNTER_ID = "counter_id"
 SCAN_INTERVAL = timedelta(hours=12)
 
 COMPONENT_ICON = "mdi:water-pump"
-COMPONENT_NAME = "Tout sur mon eau Water Client"
+COMPONENT_NAME = "Odivea Water Client"
 COMPONENT_UNIT = "m3"
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
