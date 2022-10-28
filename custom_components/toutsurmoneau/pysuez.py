@@ -4,7 +4,7 @@ import datetime
 
 
 
-BASE_URI = 'https://www.eauxdesenart.com'
+BASE_URI = 'https://www.odivea.fr/'
 API_ENDPOINT_LOGIN = '/mon-compte-en-ligne/je-me-connecte'
 API_ENDPOINT_DATA = '/mon-compte-en-ligne/statJData/'
 API_ENDPOINT_HISTORY = '/mon-compte-en-ligne/statMData/'
@@ -111,7 +111,7 @@ class SuezClient():
             self.state = float(data.json()[int(
                 yesterday_day)-1][1])
             self.success = True
-            self.attributes['attribution'] = "Data provided by toutsurmoneau.fr"
+            self.attributes['attribution'] = "Data provided by odivea.fr"
 
         except ValueError:
             raise PySuezError("Issue with yesterday data")
